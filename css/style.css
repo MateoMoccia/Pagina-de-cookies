@@ -391,3 +391,22 @@ nav.espacio a:hover {
 .boton-elegir:hover {
     background-color: #876a51;
 }
+.cointainer-quienes-somos {
+    border: 3px solid rgb(218, 170, 100);
+    align-items: center;
+    background-color: antiquewhite;
+    margin-top: 100px;
+}
+.titulos-quienes-somos{
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    text-align: left; 
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+.texto-quienes-somos{
+    font-family: "Public Sans", sans-serif;
+    border: 2px solid rgb(218, 170, 100);
+    background-color: #4c3d31;
+}
