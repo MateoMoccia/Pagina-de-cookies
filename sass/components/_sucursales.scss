@@ -1,0 +1,42 @@
+@use '../abstracts/variables' as variables;
+
+
+.contenedor-sucursales {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.mapa {
+    border: 5px solid variables.$color-border;
+    width: 900px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.textos {
+    max-width: 500px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h2, h3 {
+        margin: 10px 0;
+    }
+}
+
+.titulo-sucursales {
+    font-size: 50px;
+    font-family: variables.$font-family-bebas-neue;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.tarjeta-sucursales {
+    font-family: variables.$font-family-public-sans;
+    border: 2px solid variables.$color-border;
+    background-color: #4c3d31;
+}

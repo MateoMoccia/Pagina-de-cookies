@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as variables;
+
+.cointainer-quienes-somos {
+    border: 3px solid variables.$color-border;
+    align-items: center;
+    background-color: variables.$color-light;
+    margin-top: 100px;
+}
+
+.titulos-quienes-somos {
+    font-size: 50px;
+    font-family: variables.$font-family-bebas-neue;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.texto-quienes-somos {
+    font-family: variables.$font-family-public-sans;
+    border: 2px solid variables.$color-border;
+    background-color: #4c3d31;
+}

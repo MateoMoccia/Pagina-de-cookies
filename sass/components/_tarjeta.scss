@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as variables;
+
+
+.tarjeta {
+    font-family: variables.$font-family-public-sans;
+    background-color: #4c3d31;
+    border: 1px solid variables.$color-accent;
+    border-radius: 8px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 2px solid variables.$color-accent;
+    }
+
+    p {
+        padding: 15px;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,62 @@
+@use '../abstracts/variables' as variables;
+
+.container-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: variables.$color-light;
+    margin-top: 100px;
+}
+
+.box-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #4c3d31;
+    padding: 20px;
+    border: 1px solid variables.$color-accent;
+    border-radius: 8px;
+}
+
+.box-content {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.cookie-box-1, .cookie-box-2, .cookie-box-3 {
+    width: 200px;
+    height: 200px;
+    border: 5px solid variables.$color-border;
+    border-radius: 4px;
+    background-color: variables.$color-dark;
+    color: white;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.precios {
+    font-size: 40px;
+    font-family: variables.$font-family-public-sans;
+    font-weight: 500;
+    color: variables.$color-dark;
+}
+
+.box-mas-menos-2 {
+    display: flex;
+    align-items: left;
+    gap: 10px;
+}
+.letra-boxes {
+    font-size: 40px;
+    font-family: variables.$font-family-bebas-neue;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}

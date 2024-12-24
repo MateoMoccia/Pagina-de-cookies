@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as variables;
+// components/botones.scss
+.btn-menos, .btn-mas, .btn-personalizar {
+    padding: 5px 10px;
+    border: 1px solid variables.$color-accent;
+    background-color: variables.$color-dark;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: variables.$color-accent;
+    }
+}
+
+.boton-elegir {
+    padding: 5px 10px;
+    border: 1px solid variables.$color-accent;
+    background-color: variables.$color-dark;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: variables.$color-accent;
+    }
+}

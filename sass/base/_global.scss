@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as variables;
+
+
+.fondoHeader {
+    background-color: variables.$color-light;
+}
+
+.boxes, .sucursales, .quienes-somos, .cookies {
+    text-decoration: none;
+}

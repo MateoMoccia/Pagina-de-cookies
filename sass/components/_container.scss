@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as variables;
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: variables.$color-light;
+    border: 5px solid variables.$color-border;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 20px;
+
+    img {
+        width: 150px;
+        margin-right: 20px;
+    }
+
+    nav.espacio {
+        flex-grow: 1;
+
+        ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            justify-content: space-evenly;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: variables.$color-accent;
+                color: white;
+            }
+        }
+    }
+}
+.contenedor-de-cookies {
+    font-family: variables.$font-family-public-sans;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
