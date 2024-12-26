@@ -125,6 +125,8 @@ nav.espacio ul {
   padding: 0;
   margin: 0;
   justify-content: space-evenly;
+  list-style-type: none;
+  text-decoration: underline;
 }
 nav.espacio a {
   text-decoration: none;
