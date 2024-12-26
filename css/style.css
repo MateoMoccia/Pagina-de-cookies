@@ -134,7 +134,46 @@ selector {
   background-color: #876a51;
   color: white;
 }
+.container .hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+}
+.container .hamburger span {
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+}
 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav.espacio ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  nav.espacio ul a {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .menu-active {
+    display: flex;
+  }
+}
 .contenedor-de-cookies {
   font-family: "Public Sans", sans-serif;
   display: flex;
