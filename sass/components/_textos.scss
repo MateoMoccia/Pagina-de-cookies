@@ -31,6 +31,7 @@
     letter-spacing: 0.2em;
     margin-bottom: 10px;
 }
+
 .container-2 {
     display: flex;
     align-items: center;
@@ -65,4 +66,92 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 0px;
+}
+
+@media (max-width: 1024px) {
+    .senti-la-diferencia {
+        font-size: 80px;
+        margin-right: 0;
+    }
+
+    .la-maxima-calidad {
+        font-size: 30px;
+        margin-right: 0;
+    }
+
+    .container-2 {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .container-2 img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .arma-tu-propia-box {
+        font-size: 90px;
+    }
+
+    .porque-una-nunca-es-suficiente {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .senti-la-diferencia {
+        font-size: 60px;
+        margin-right: 0;
+    }
+
+    .la-maxima-calidad {
+        font-size: 25px;
+        margin-right: 0;
+    }
+
+    .container-2 {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .container-2 img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .arma-tu-propia-box {
+        font-size: 70px;
+    }
+
+    .porque-una-nunca-es-suficiente {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .senti-la-diferencia {
+        font-size: 50px;
+    }
+
+    .la-maxima-calidad {
+        font-size: 20px;
+    }
+
+    .container-2 {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .container-2 img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .arma-tu-propia-box {
+        font-size: 50px;
+    }
+
+    .porque-una-nunca-es-suficiente {
+        font-size: 25px;
+    }
 }

@@ -1,5 +1,4 @@
 @use '../abstracts/variables' as variables;
-
 .container {
     display: flex;
     align-items: center;
@@ -38,6 +37,7 @@
         }
     }
 }
+
 .contenedor-de-cookies {
     font-family: variables.$font-family-public-sans;
     display: flex;
@@ -45,4 +45,80 @@
     gap: 20px;
     padding: 20px;
     justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav.espacio {
+        ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        a {
+            padding: 8px 15px;
+        }
+    }
+
+    .contenedor-de-cookies {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    nav.espacio {
+        ul {
+            justify-content: space-between;
+        }
+
+        a {
+            padding: 6px 12px;
+        }
+    }
+
+    .contenedor-de-cookies {
+        padding: 18px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        flex-direction: row;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    nav.espacio {
+        ul {
+            justify-content: space-evenly;
+        }
+
+        a {
+            padding: 5px 10px;
+        }
+    }
+
+    .contenedor-de-cookies {
+        padding: 20px;
+    }
 }

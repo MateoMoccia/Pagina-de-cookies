@@ -6,6 +6,7 @@
     justify-content: center;
     background-color: variables.$color-light;
     margin-top: 100px;
+    flex-wrap: wrap;
 }
 
 .box-item {
@@ -15,6 +16,7 @@
     padding: 20px;
     border: 1px solid variables.$color-accent;
     border-radius: 8px;
+    margin: 10px;
 }
 
 .box-content {
@@ -52,6 +54,7 @@
     align-items: left;
     gap: 10px;
 }
+
 .letra-boxes {
     font-size: 40px;
     font-family: variables.$font-family-bebas-neue;
@@ -59,4 +62,74 @@
     text-align: left;
     margin-bottom: 10px;
     line-height: 1.2;
+}
+
+@media (max-width: 600px) {
+    .container-boxes {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .box-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .cookie-box-1, .cookie-box-2, .cookie-box-3 {
+        width: 100%;
+        height: auto;
+        border: 3px solid variables.$color-border;
+    }
+
+    .letra-boxes {
+        font-size: 30px;
+    }
+
+    .precios {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container-boxes {
+        flex-wrap: wrap;
+        margin-top: 70px;
+    }
+
+    .box-item {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .cookie-box-1, .cookie-box-2, .cookie-box-3 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .letra-boxes {
+        font-size: 35px;
+    }
+
+    .precios {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .box-item {
+        width: 30%;
+    }
+
+    .cookie-box-1, .cookie-box-2, .cookie-box-3 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .letra-boxes {
+        font-size: 40px;
+    }
+
+    .precios {
+        font-size: 40px;
+    }
 }

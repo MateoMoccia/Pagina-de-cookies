@@ -1,6 +1,4 @@
 @use '../abstracts/variables' as variables;
-
-
 .tarjeta {
     font-family: variables.$font-family-public-sans;
     background-color: #4c3d31;
@@ -24,3 +22,33 @@
         text-align: justify;
     }
 }
+
+@media (max-width: 768px) {
+    .tarjeta {
+        width: 200px;
+    }
+
+    .tarjeta img {
+        height: 150px;
+    }
+
+    .tarjeta p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tarjeta {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .tarjeta img {
+        height: 120px;
+    }
+
+    .tarjeta p {
+        font-size: 12px;
+    }
+}
+

@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as variables;
-// components/botones.scss
+
+
 .btn-menos, .btn-mas, .btn-personalizar {
     padding: 5px 10px;
     border: 1px solid variables.$color-accent;
@@ -11,6 +12,12 @@
 
     &:hover {
         background-color: variables.$color-accent;
+    }
+
+   
+    @media (max-width: 768px) {
+        padding: 8px 15px; 
+        font-size: 14px; 
     }
 }
 
@@ -26,4 +33,11 @@
     &:hover {
         background-color: variables.$color-accent;
     }
+
+  
+    @media (max-width: 768px) {
+        padding: 8px 15px; 
+        font-size: 14px; 
+    }
 }
+

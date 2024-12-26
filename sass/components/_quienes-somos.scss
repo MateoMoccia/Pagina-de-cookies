@@ -21,3 +21,49 @@
     border: 2px solid variables.$color-border;
     background-color: #4c3d31;
 }
+
+@media (max-width: 600px) {
+    .cointainer-quienes-somos {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .titulos-quienes-somos {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .texto-quienes-somos {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cointainer-quienes-somos {
+        margin-top: 75px;
+        padding: 20px;
+    }
+
+    .titulos-quienes-somos {
+        font-size: 40px;
+    }
+
+    .texto-quienes-somos {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .cointainer-quienes-somos {
+        margin-top: 100px;
+        padding: 25px;
+    }
+
+    .titulos-quienes-somos {
+        font-size: 50px;
+    }
+
+    .texto-quienes-somos {
+        padding: 25px;
+    }
+}
