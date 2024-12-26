@@ -624,5 +624,19 @@ selector {
     font-size: 25px;
   }
 }
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
 
 /*# sourceMappingURL=style.css.map */
