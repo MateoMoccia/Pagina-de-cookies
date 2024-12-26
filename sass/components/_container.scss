@@ -1,95 +1,43 @@
 @use '../abstracts/variables' as variables;
-
 .container {
     display: flex;
     align-items: center;
-    background-color: $color-light; 
-    border: 5px solid $color-border; 
+    background-color: variables.$color-light; 
+    border: 5px solid variables.$color-border; 
     justify-content: space-between;
     flex-direction: row;
     padding: 10px 20px;
-    position: relative; 
-
-    img {
-        width: 150px;
-        margin-right: 20px;
-    }
-
-    nav.espacio {
-        flex-grow: 1;
-
-        ul {
-            display: flex;
-            padding: 0;
-            margin: 0;
-            justify-content: space-evenly;
+    position: relative
         }
-
-        a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 5px;
-
-            &:hover {
-                background-color: $color-accent; 
-                color: white;
+        img {
+            width: 150px;
+            margin-right: 20px;
+        }
+    
+        nav.espacio {
+            flex-grow: 1;
+    
+            ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                justify-content: space-evenly;
+            }
+    
+            a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 5px;
+    
+                &:hover {
+                    background-color: variables.$color-accent; 
+                    color: white;
+                }
             }
         }
-    }
-
-    .hamburger {
-        display: none;
-        cursor: pointer;
-        flex-direction: column;
-        gap: 4px;
-        justify-content: center;
-        height: 30px;
-        width: 30px;
-
-        span {
-            display: block;
-            width: 25px;
-            height: 4px;
-            background-color: #333;
-            border-radius: 2px;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav.espacio ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-
-        a {
-            padding: 10px;
-            text-align: center;
-            width: 100%;
-        }
-    }
-
-    .hamburger {
-        display: flex;
-        position: absolute;
-        top: 20px;
-        right: 20px; 
-    }
-
-    .menu-active {
-        display: flex;
-    }
-}
-
-
+    
 
 .contenedor-de-cookies {
     font-family: variables.$font-family-public-sans;
@@ -99,78 +47,63 @@
     padding: 20px;
     justify-content: center;
 }
-
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
         align-items: center;
     }
-
     img {
         width: 100px;
         margin-right: 0;
         margin-bottom: 10px;
     }
-
     nav.espacio {
         ul {
             flex-direction: column;
             align-items: center;
         }
-
         a {
             padding: 8px 15px;
         }
     }
-
     .contenedor-de-cookies {
         padding: 15px;
     }
 }
-
 @media (min-width: 601px) and (max-width: 1024px) {
     .container {
         flex-direction: row;
     }
-
     img {
         width: 120px;
     }
-
     nav.espacio {
         ul {
             justify-content: space-between;
         }
-
         a {
             padding: 6px 12px;
         }
     }
-
     .contenedor-de-cookies {
         padding: 18px;
     }
 }
-
 @media (min-width: 1025px) {
     .container {
         flex-direction: row;
     }
-
     img {
         width: 150px;
     }
-
     nav.espacio {
         ul {
             justify-content: space-evenly;
         }
-
         a {
             padding: 5px 10px;
         }
     }
-
     .contenedor-de-cookies {
         padding: 20px;
     }
