@@ -1,13 +1,14 @@
 @use '../abstracts/variables' as variables;
 
-.container { 
+.container {
     display: flex;
     align-items: center;
-    background-color: variables.$color-light;
-    border: 5px solid variables.$color-border;
+    background-color: $color-light; 
+    border: 5px solid $color-border; 
     justify-content: space-between;
     flex-direction: row;
     padding: 10px 20px;
+    position: relative; 
 
     img {
         width: 150px;
@@ -32,12 +33,11 @@
             border-radius: 5px;
 
             &:hover {
-                background-color: variables.$color-accent;
+                background-color: $color-accent; 
                 color: white;
             }
         }
     }
-
 
     .hamburger {
         display: none;
@@ -58,7 +58,6 @@
     }
 }
 
-
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -66,7 +65,7 @@
     }
 
     nav.espacio ul {
-        display: none;  
+        display: none;
         flex-direction: column;
         width: 100%;
         margin-top: 10px;
@@ -78,16 +77,18 @@
         }
     }
 
-  
     .hamburger {
-        display: flex;  
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px; 
     }
 
-  
     .menu-active {
-        display: flex; 
+        display: flex;
     }
 }
+
 
 
 .contenedor-de-cookies {
